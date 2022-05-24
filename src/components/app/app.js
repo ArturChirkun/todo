@@ -60,7 +60,7 @@ export default class App extends Component {
     onToggleProp = (arr, id, propName) => {
         const idx = arr.findIndex((el) => el.id === id);
         const oldItem =arr[idx];
-        const newItem = {...oldItem, [propName] : !oldItem.[propName]};
+        const newItem = {...oldItem, [propName] : !oldItem.propName};
 
         return [
           ...arr.slice(0, idx),
